@@ -1,7 +1,7 @@
 {
-  "name": "logseq-starter-plugin",
+  "name": "logseq-cookie-editor",
   "version": "1.0",
-  "description": "Starter Plugin",
+  "description": "A logseq plugin to create, edit and delete cookies",
   "main": "dist/index.html",
   "targets": {
     "main": false
@@ -17,8 +17,8 @@
     "@logseq/libs": "0.0.1-alpha.34"
   },
   "logseq": {
-    "id": "logseq-starter-plugin",
-    "title": "logseq-starter-plugin",
+    "id": "logseq-cookie-editor",
+    "title": "logseq cookie editor",
     "icon": "./icon.png"
   },
   "devDependencies": {
