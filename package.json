@@ -1,25 +1,27 @@
 {
-  "name": "lsp-journals-calendar",
-  "version": "0.0.1",
+  "name": "logseq-starter-plugin",
+  "version": "1.0",
+  "description": "Starter Plugin",
   "main": "dist/index.html",
-  "author": "©Logseq",
+  "targets": {
+    "main": false
+  },
   "scripts": {
-    "dev": "vite",
-    "build": "vite build"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build --no-source-maps index.html --public-url ./"
   },
+  "keywords": [],
+  "author": "Aryan Sawhney",
+  "license": "MIT",
   "dependencies": {
-    "@popperjs/core": "^2.9.1",
-    "@logseq/libs": "^0.0.1-alpha.26",
-    "dayjs": "^1.10.4",
-    "v-calendar": "^3.0.0-alpha.3",
-    "vue": "^3.0.4"
-  },
-  "devDependencies": {
-    "@vue/compiler-sfc": "^3.0.4",
-    "vite": "^1.0.0-rc.13"
+    "@logseq/libs": "0.0.1-alpha.34"
   },
   "logseq": {
-    "id": "_zsmbaoekb",
+    "id": "logseq-starter-plugin",
+    "title": "logseq-starter-plugin",
     "icon": "./icon.png"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.0"
   }
 }
