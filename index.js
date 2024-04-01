@@ -1,10 +1,12 @@
 import '@logseq/libs';
-import cookies from "./cookie.json" assert { type: 'json' };
+import cookiesJson from "./cookie.json" assert { type: 'json' };ç
+import Cookies from 'js-cookie'
 
 const insertCookie = () => {
-  console.log("🚀 ~ cookie:", cookies)
-  for(let cookie in cookies) {
-    cookie = cookies[cookie];
+  
+  console.log("🚀 ~ cookie:", cookiesJson)
+  for(let cookie in cookiesJson) {
+    cookie = cookiesJson[cookie];
     const tempName = cookie.name;
     console.log("🚀 ~ insertCookie ~ tempName:", tempName)
     const tempValue = cookie.value;
@@ -12,14 +14,13 @@ const insertCookie = () => {
     delete cookie.name;
     delete cookie.value;
     console.log("🚀 ~ insertCookie ~ cookie:", cookie)
-    oreo.set(tempName, tempValue, {... cookie});
+    Cookies.set(tempName, tempValue, {... cookie});
   }
-  console.log("🚀 ~ main ~ oreo.list:", oreo.list)
 }
 
 
 const main = () => {
-  console.log("🚀 ~ main ~ oreo.list:", oreo.list)
+
   insertCookie();
 }
 
